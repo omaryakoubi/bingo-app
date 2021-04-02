@@ -1,28 +1,20 @@
-// import logo from './logo.svg';
+import Cards from './components/Card.js'
+import Logo from './components/Logo.js'
 import './App.css';
-import Card from './components/Card'
 
 
-function App() {
-  return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <Card / >
-    </div>
-  );
-}
+    function App() {
 
-export default App;
+      let titles = [
+     1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
+        ].sort(() =>  Math.random() - 0.5)
+
+      return (
+        <div className="App">
+            <Logo />
+            <Cards titles={titles} />
+        </div>
+      );
+    }
+
+    export default App;
