@@ -1,6 +1,7 @@
 import Cards from './components/Card.js'
 import Logo from './components/Logo.js'
 import './App.css';
+import {Grid} from '@material-ui/core'
 
 
     function App() {
@@ -11,8 +12,12 @@ import './App.css';
 
       return (
         <div className="App">
-            <Logo />
-            <Cards titles={titles} />
+          <Grid container direction="column" alignItems="center" justify="center">
+            <Grid item xs={12} sm={8} md={6} lg={4} xl={3}>
+              <Logo />
+              <Cards titles={titles} />
+            </Grid>
+          </Grid>
         </div>
       );
     }

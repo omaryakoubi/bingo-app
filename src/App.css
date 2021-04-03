@@ -1,5 +1,5 @@
 .App {
-  min-height: 60vh; 
+  /* min-height: 30vh;  */
   margin-top: 3%;
 }
 
@@ -7,7 +7,6 @@ html {
   background: url('./images/background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: ; */
   background-attachment: fixed;
 }
 
@@ -19,7 +18,7 @@ html {
 
 .logo {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -34,15 +33,15 @@ html {
   align-content: center;
   text-align: center;
   grid-gap: 3px;
-  grid-template-columns: repeat(5, minmax(50px, 90px));
-  margin-top: 1%;
+  grid-template-columns: repeat(5, minmax(50px, 70px));
+  margin-top: -1%;
 }
 
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 11px;
+  padding: 9px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bolder;
   font-size: 35px;
